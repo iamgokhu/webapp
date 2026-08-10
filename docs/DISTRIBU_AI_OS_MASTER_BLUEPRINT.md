@@ -199,7 +199,7 @@ Deployment: Docker Compose first, Kubernetes later
 | Employee Profiles | Personal, job, bank, documents | P0 |
 | GPS Attendance | Geofence-based check-in/out | P0 |
 | Selfie Verification | Face match + liveness detection | P1 |
-| Branch Geofence | 100m radius verification | P0 |
+| Branch Geofence | 5–15m radius verification (tight precision, gate-level) | P0 |
 | Leave Management | Apply → approve → deduct | P1 |
 | Salary Processing | PF, ESI, PT, overtime | P2 |
 | Anti-Fake-GPS Detection | Mock location detection | P0 |
@@ -906,7 +906,7 @@ CREATE TABLE branches (
   pincode VARCHAR(6),
   latitude DECIMAL,
   longitude DECIMAL,
-  geofence_radius_meters INT DEFAULT 100,
+  geofence_radius_meters INT DEFAULT 10 CHECK (geofence_radius_meters BETWEEN 5 AND 15),
   is_active BOOLEAN DEFAULT true,
   created_at TIMESTAMP DEFAULT NOW()
 );
