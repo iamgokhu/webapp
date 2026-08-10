@@ -20,7 +20,7 @@ export default function LoginPage() {
         <Card className="shadow-xl">
           <CardHeader className="text-center">
             <div className="mx-auto h-10 w-10 rounded-xl bg-zinc-900 flex items-center justify-center text-white font-bold">D</div>
-            <h1 className="mt-3 text-xl font-bold">DistribuAI OS — Paid Login</h1>
+            <h1 className="mt-3 text-xl font-bold">DistribuAI OS — Login</h1>
             <p className="text-xs text-zinc-500">OTP login • 6 digits • 5-min expiry • Rate limited 5/hour</p>
             <Badge variant="secondary" className="mx-auto mt-2">Demo OTP: 123456 (any 6 digits works)</Badge>
           </CardHeader>

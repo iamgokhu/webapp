@@ -42,14 +42,14 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
           <div className="h-8 w-8 rounded-lg bg-orange-500 flex items-center justify-center font-bold text-white text-sm">D</div>
           <div>
             <div className="font-bold tracking-tight leading-none">DistribuAI OS</div>
-            <div className="text-[10px] tracking-widest text-zinc-400">PAID • ENTERPRISE • v2.0</div>
+            <div className="text-[10px] tracking-widest text-zinc-400">ENTERPRISE</div>
           </div>
           <button onClick={()=>setOpen(false)} className="lg:hidden ml-auto"><X className="h-5 w-5" /></button>
         </div>
 
         <div className="p-3">
           <div className="rounded-xl bg-gradient-to-br from-orange-500 to-amber-500 p-3 text-white">
-            <div className="text-xs font-bold flex items-center gap-1"><Sparkles className="h-3.5 w-3.5" /> {user?.plan ? user.plan.toUpperCase() : "ENTERPRISE"} — PAID</div>
+            <div className="text-xs font-bold flex items-center gap-1"><Sparkles className="h-3.5 w-3.5" /> {user?.plan ? user.plan.toUpperCase() : "ENTERPRISE"}</div>
             <div className="text-[11px] opacity-90">All 35 modules • Unlimited branches</div>
             <div className="mt-2 h-1.5 rounded-full bg-white/30 overflow-hidden"><div className="h-full bg-white" style={{ width: "68%" }} /></div>
             <div className="text-[10px] mt-1 opacity-80">68% quota • Renews 09 Sep 2026 • Razorpay</div>
@@ -88,7 +88,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <div className="sticky top-0 z-30 flex h-14 items-center gap-3 border-b bg-white/80 backdrop-blur px-4">
           <button onClick={()=>setOpen(true)} className="lg:hidden p-2 rounded-lg border"><Menu className="h-4 w-4" /></button>
           <div className="hidden md:flex items-center gap-2 text-xs">
-            <Badge variant="secondary">PAID</Badge>
+            <span className="text-zinc-500">Salem HQ • Branch: Salem-A • Today: {new Date().toLocaleDateString("en-IN")}</span>
             <span className="text-zinc-500">Salem HQ • Branch: Salem-A • Today: {new Date().toLocaleDateString("en-IN")}</span>
             <span className="hidden lg:inline-flex items-center gap-1 ml-2"><span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" /> Live — Redis • Postgres • Meilisearch</span>
           </div>

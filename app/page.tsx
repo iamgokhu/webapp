@@ -22,13 +22,13 @@ export default function LandingPage() {
         <div className="relative mx-auto max-w-[1280px] px-4 py-12 md:py-20">
           <div className="mx-auto max-w-3xl text-center">
             <Badge variant="outline" className="mb-4 gap-1.5 py-1.5 px-3 text-xs">
-              <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" /> PAID EDITION — Production Ready • SOC 2 • DPDP Compliant
+              <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" /> Production Ready • SOC 2 • DPDP Compliant
             </Badge>
             <h1 className="font-display text-4xl md:text-6xl font-bold tracking-tight leading-[0.95]">
               The AI OS that <span className="text-orange-500">runs your</span> <br /> entire distribution.
             </h1>
             <p className="mt-4 text-lg text-zinc-600 max-w-2xl mx-auto">
-              Billing in 8 seconds. Inventory that never lies. 20+ AI agents handling orders, collections, fraud & routes — controlled by one owner. <span className="font-semibold text-zinc-900">This is the paid, production DistribuAI OS.</span>
+              Billing in 8 seconds. Inventory that never lies. 20+ AI agents handling orders, collections, fraud & routes — controlled by one owner. <span className="font-semibold text-zinc-900">This is the production DistribuAI OS.</span>
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link href="/checkout?plan=growth"><Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2">Start 14-day Free Trial <ArrowRight className="h-4 w-4" /></Button></Link>
@@ -47,7 +47,7 @@ export default function LandingPage() {
             <div className="rounded-2xl border border-zinc-200 bg-white shadow-2xl overflow-hidden">
               <div className="flex items-center gap-2 border-b bg-zinc-50 px-4 py-3">
                 <div className="flex gap-1.5"><span className="h-3 w-3 rounded-full bg-red-400" /><span className="h-3 w-3 rounded-full bg-yellow-400" /><span className="h-3 w-3 rounded-full bg-green-400" /></div>
-                <span className="ml-3 text-xs font-mono text-zinc-500">app.distribuai.in — Super Admin Command Center • PAID</span>
+                <span className="ml-3 text-xs font-mono text-zinc-500">app.distribuai.in — Super Admin Command Center</span>
                 <span className="ml-auto hidden sm:flex items-center gap-1.5 text-xs"><span className="h-2 w-2 rounded-full bg-emerald-500" /> All systems operational</span>
               </div>
               <div className="grid md:grid-cols-[240px_1fr] min-h-[420px]">
@@ -60,7 +60,7 @@ export default function LandingPage() {
                   </div>
                   <Card className="bg-orange-500 text-white border-orange-500">
                     <CardContent className="p-3">
-                      <div className="text-xs font-bold">Paid Plan: Enterprise</div>
+                      <div className="text-xs font-bold">Plan: Enterprise</div>
                       <div className="text-[11px] opacity-90">All 35 modules • Unlimited</div>
                       <div className="mt-2 h-1.5 rounded-full bg-white/30 overflow-hidden"><div className="h-full w-[68%] bg-white" /></div>
                       <div className="text-[10px] mt-1 opacity-80">68% of quota • Renews 09 Sep</div>
@@ -105,7 +105,7 @@ export default function LandingPage() {
           {[
             { v: "8 sec", k: "Invoice creation" },
             { v: "50K+ SKUs", k: "Preloaded item library" },
-            { v: "99.9%", k: "Uptime SLA (paid)" },
+            { v: "99.9%", k: "Uptime SLA" },
             { v: "₹ 0 fraud", k: "Last 30 days — AI blocked 23 spoofs" },
           ].map(s => (
             <div key={s.k}><div className="text-xl font-bold">{s.v}</div><div className="text-xs opacity-70">{s.k}</div></div>
@@ -119,7 +119,7 @@ export default function LandingPage() {
           <div>
             <Badge variant="secondary">LEGO-BLOCK MODULES</Badge>
             <h2 className="mt-2 text-3xl font-bold tracking-tight">Every feature is a module. <span className="text-orange-500">Pay only for what you use.</span></h2>
-            <p className="mt-2 text-zinc-600 max-w-2xl">Paid tiers unlock modules instantly — no rebuild, no migration. Enable, disable, bill per branch.</p>
+            <p className="mt-2 text-zinc-600 max-w-2xl">Unlock modules instantly — no rebuild, no migration. Enable, disable, bill per branch.</p>
           </div>
           <Link href="/dashboard/modules"><Button variant="outline" size="sm">Open Module Marketplace <ArrowRight className="h-3.5 w-3.5 ml-1" /></Button></Link>
         </div>
@@ -135,7 +135,7 @@ export default function LandingPage() {
                 <div className="text-xs text-zinc-500">{m.cat} • {m.code}</div>
                 <div className="mt-3 flex items-center justify-between text-xs">
                   <span className={m.paid ? "font-semibold text-orange-600" : "text-zinc-600"}>{m.price}</span>
-                  <span className="text-zinc-400">{m.paid ? "Paid unlock" : "Included"}</span>
+                  <span className="text-zinc-400">{m.paid ? "Included" : "Included"}</span>
                 </div>
               </CardContent>
             </Card>
@@ -162,7 +162,7 @@ export default function LandingPage() {
               </div>
             </div>
             <Card className="overflow-hidden">
-              <CardHeader className="border-b bg-white"><div className="font-semibold text-sm flex items-center gap-2"><Sparkles className="h-4 w-4 text-orange-500" /> Live Paid Agents</div></CardHeader>
+              <CardHeader className="border-b bg-white"><div className="font-semibold text-sm flex items-center gap-2"><Sparkles className="h-4 w-4 text-orange-500" /> Live Agents</div></CardHeader>
               <CardContent className="p-0 divide-y">
                 {AGENTS.map(a => (
                   <div key={a.name} className="flex items-center gap-3 p-3 text-sm">
@@ -183,7 +183,7 @@ export default function LandingPage() {
       {/* Pricing */}
       <section id="pricing" className="mx-auto max-w-[1280px] px-4 py-14">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Paid plans for serious distribution.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Plans for serious distribution.</h2>
           <p className="mt-3 text-zinc-600">All plans include GST billing, inventory, audit logs, cloud backup. Upgrade/downgrade instantly. 14-day free trial, no credit card.</p>
           <div className="mt-6 inline-flex items-center rounded-full border bg-zinc-50 p-1 text-sm">
             <button onClick={() => setAnnual(false)} className={`px-4 py-1.5 rounded-full ${!annual ? "bg-zinc-900 text-white" : "text-zinc-600"}`}>Monthly</button>
@@ -269,10 +269,10 @@ export default function LandingPage() {
       {/* FAQ */}
       <section className="border-t bg-zinc-50">
         <div className="mx-auto max-w-3xl px-4 py-12">
-          <h3 className="text-2xl font-bold">FAQs — Paid Edition</h3>
+          <h3 className="text-2xl font-bold">FAQs</h3>
           <div className="mt-6 space-y-3">
             {[
-              { q: "What's the difference between free and paid?", a: "Paid unlocks field ops, AI agents, delivery OTP, advanced fraud, white-label, unlimited branches/orders, and SLA support. Free is limited to single branch billing demo." },
+              { q: "What's the difference between free and paid?", a: "Includes field ops, AI agents, delivery OTP, advanced fraud, white-label, unlimited branches/orders, and SLA support. Free is limited to single branch billing demo." },
               { q: "Can I switch plans later?", a: "Yes — upgrade/downgrade instantly. Pro-rated billing via Razorpay. Your data stays." },
               { q: "Is my data safe & compliant?", a: "Data stays in AWS Mumbai (data localization), encrypted at rest (AES-256), TLS 1.3, immutable audit logs, DPDP Act 2023 ready." },
               { q: "Do you handle GST e-Invoice/e-Way?", a: "Yes — via ClearTax/Masters India GSP. Auto IRN, QR, and e-Way for >₹50K movements." },
@@ -284,7 +284,7 @@ export default function LandingPage() {
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/checkout?plan=growth"><Button variant="secondary">Start Paid Trial — Growth</Button></Link>
+            <Link href="/checkout?plan=growth"><Button variant="secondary">Start Trial — Growth</Button></Link>
             <Link href="/dashboard"><Button variant="outline">Explore Dashboard Demo</Button></Link>
           </div>
         </div>
@@ -292,7 +292,7 @@ export default function LandingPage() {
 
       <footer className="border-t py-8 text-center text-xs text-zinc-500">
         <div className="mx-auto max-w-[1280px] px-4">
-          <div className="font-semibold text-zinc-700">DistribuAI OS — Paid Edition v2.0 • August 2026</div>
+          <div className="font-semibold text-zinc-700">DistribuAI OS • August 2026</div>
           <div className="mt-1">Made for Indian distribution • Tamil Nadu • GST • UPI • Razorpay • MapmyIndia • MSG91 • Gupshup</div>
           <div className="mt-2 flex items-center justify-center gap-4"><a href="#" className="underline">Terms</a><a href="#" className="underline">Privacy (DPDP)</a><a href="#" className="underline">Refund Policy</a><a href="#" className="underline">Contact</a></div>
         </div>

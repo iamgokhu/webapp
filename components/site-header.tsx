@@ -12,7 +12,6 @@ export function SiteHeader() {
         <Link href="/" className="flex items-center gap-2">
           <div className="h-8 w-8 rounded-lg bg-zinc-900 flex items-center justify-center text-white font-bold text-sm">D</div>
           <span className="font-display font-bold tracking-tight">DistribuAI <span className="text-orange-500">OS</span></span>
-          <span className="hidden sm:inline-flex ml-2 rounded-full bg-orange-500 px-2 py-0.5 text-xs font-bold text-white">PAID — v2.0</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600">
           <a href="#modules" className="hover:text-zinc-900">Modules</a>
