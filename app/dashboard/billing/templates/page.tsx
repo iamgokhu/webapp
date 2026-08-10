@@ -17,7 +17,7 @@ export default function InvoiceTemplatesPage() {
     <div className="space-y-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h1 className="text-xl font-bold flex items-center gap-2"><FileText className="h-5 w-5 text-orange-500" /> Invoice Templates — SRS MART <Badge>Paid • A4 / A5</Badge></h1>
+          <h1 className="text-xl font-bold flex items-center gap-2"><FileText className="h-5 w-5 text-emerald-600" /> Invoice Templates — SRS MART <Badge>Paid • A4 / A5</Badge></h1>
           <p className="text-xs text-zinc-600">Choose your bill design — like your 5 SRS MART samples. A4 for laser, A5 for thermal/dot-matrix. Each theme keeps same GST data, only look changes. Print-ready 300 DPI.</p>
         </div>
         <div className="flex gap-2">
@@ -53,7 +53,7 @@ export default function InvoiceTemplatesPage() {
               <button
                 key={t.id}
                 onClick={() => setTheme(t.id)}
-                className={`text-left rounded-2xl border p-3 transition ${theme === t.id ? "border-orange-500 bg-orange-50" : "border-zinc-200 bg-white hover:bg-zinc-50"}`}
+                className={`text-left rounded-2xl border p-3 transition ${theme === t.id ? "border-emerald-600 bg-emerald-50" : "border-zinc-200 bg-white hover:bg-zinc-50"}`}
               >
                 <div className="flex items-start justify-between gap-2">
                   <div className="text-sm font-semibold leading-tight">{t.name}</div>
@@ -63,7 +63,7 @@ export default function InvoiceTemplatesPage() {
                 <div className="mt-2 flex items-center gap-2 text-xs">
                   <span className="px-2 py-1 rounded-full bg-zinc-100 border">{t.category}</span>
                   <span className="text-zinc-500">Watermark: {t.watermark}</span>
-                  {theme === t.id && <span className="ml-auto text-orange-600 font-bold flex items-center gap-1"><Eye className="h-3 w-3" /> Previewing</span>}
+                  {theme === t.id && <span className="ml-auto text-emerald-600 font-bold flex items-center gap-1"><Eye className="h-3 w-3" /> Previewing</span>}
                 </div>
               </button>
             ))}

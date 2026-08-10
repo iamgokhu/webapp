@@ -40,7 +40,7 @@ export default function InventoryPage() {
                 <div className="rounded-xl border bg-white p-2"><div className="font-bold">{item.stock}</div><div className="text-zinc-500">Physical</div></div>
                 <div className="rounded-xl border bg-white p-2"><div className="font-bold">{item.ats}</div><div className="text-emerald-600">ATS</div></div>
                 <div className="rounded-xl border bg-white p-2"><div className="font-bold">{item.blocked}</div><div className="text-zinc-500">Blocked</div></div>
-                <div className="rounded-xl border bg-white p-2"><div className="font-bold text-orange-600">{formatCurrency(item.sale)}</div><div className="text-zinc-500">Sale</div></div>
+                <div className="rounded-xl border bg-white p-2"><div className="font-bold text-emerald-600">{formatCurrency(item.sale)}</div><div className="text-zinc-500">Sale</div></div>
               </div>
               <div className="flex gap-2">
                 <Button size="sm" variant="outline" className="flex-1 h-8 text-xs">Move</Button>

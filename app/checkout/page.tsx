@@ -77,7 +77,7 @@ function CheckoutInner() {
               <CardHeader className="pb-2"><div className="font-semibold">Payment method</div></CardHeader>
               <CardContent className="space-y-3">
                 <div className="grid grid-cols-3 gap-2 text-xs">
-                  <div className="rounded-xl border-2 border-orange-500 bg-orange-50 p-3 text-center font-semibold flex flex-col items-center gap-1"><CreditCard className="h-5 w-5" /> Card</div>
+                  <div className="rounded-xl border-2 border-emerald-600 bg-emerald-50 p-3 text-center font-semibold flex flex-col items-center gap-1"><CreditCard className="h-5 w-5" /> Card</div>
                   <div className="rounded-xl border p-3 text-center flex flex-col items-center gap-1"><Smartphone className="h-5 w-5" /> UPI</div>
                   <div className="rounded-xl border p-3 text-center flex flex-col items-center gap-1"><Building2 className="h-5 w-5" /> Netbanking</div>
                 </div>
@@ -120,7 +120,7 @@ function CheckoutInner() {
               </CardContent>
             </Card>
 
-            <Card className="p-4 bg-orange-50 border-orange-200">
+            <Card className="p-4 bg-emerald-50 border-emerald-200">
               <div className="text-sm font-semibold">Why Mathi PI OS — Paid?</div>
               <ul className="mt-2 space-y-1 text-xs text-zinc-700 list-disc list-inside">
                 <li>8-sec billing saves ~2 hrs/day per counter</li>

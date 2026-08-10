@@ -11,7 +11,7 @@ export function SiteHeader() {
       <div className="mx-auto max-w-[1280px] flex h-14 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
           <div className="h-8 w-8 rounded-lg bg-zinc-900 flex items-center justify-center text-white font-bold text-sm">M</div>
-          <span className="font-display font-bold tracking-tight">Mathi PI <span className="text-orange-500">OS</span></span>
+          <span className="font-display font-bold tracking-tight">Mathi PI <span className="text-emerald-600">OS</span></span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600">
           <a href="#modules" className="hover:text-zinc-900">Modules</a>

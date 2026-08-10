@@ -128,11 +128,11 @@ export default function CommandCenter() {
 
       <div className="grid lg:grid-cols-2 gap-4">
         <Card>
-          <CardHeader className="flex flex-row items-center justify-between"><span className="font-semibold text-sm flex items-center gap-1"><Cpu className="h-4 w-4 text-orange-500" /> AI Agent Budgets — Today</span><Badge variant="outline">Auto-pause on overrun</Badge></CardHeader>
+          <CardHeader className="flex flex-row items-center justify-between"><span className="font-semibold text-sm flex items-center gap-1"><Cpu className="h-4 w-4 text-emerald-600" /> AI Agent Budgets — Today</span><Badge variant="outline">Auto-pause on overrun</Badge></CardHeader>
           <CardContent className="space-y-2">
             {AGENTS.slice(0,4).map(a=>(
               <div key={a.name} className="flex items-center gap-3 text-sm border rounded-xl px-3 py-2">
-                <div className="flex-1"><div className="font-medium text-xs">{a.name}</div><div className="text-xs text-zinc-500">₹{a.cost} / ₹{a.budget} • {a.jobs} jobs</div><div className="mt-1 h-1.5 rounded-full bg-zinc-100 overflow-hidden"><div className="h-full bg-orange-500" style={{width: `${Math.min(100, (a.cost/a.budget)*100)}%`}} /></div></div>
+                <div className="flex-1"><div className="font-medium text-xs">{a.name}</div><div className="text-xs text-zinc-500">₹{a.cost} / ₹{a.budget} • {a.jobs} jobs</div><div className="mt-1 h-1.5 rounded-full bg-zinc-100 overflow-hidden"><div className="h-full bg-emerald-600" style={{width: `${Math.min(100, (a.cost/a.budget)*100)}%`}} /></div></div>
                 <Badge variant={a.status==="Running"?"success":"secondary"}>{a.status}</Badge>
               </div>
             ))}
@@ -148,7 +148,7 @@ export default function CommandCenter() {
                 <Badge variant={d.status==="Delivered"?"success": d.status==="In Transit"?"warning":"secondary"}>{d.status}</Badge>
               </div>
             ))}
-            <div className="flex gap-2 text-xs"><span className="inline-flex items-center gap-1"><CheckCircle2 className="h-3.5 w-3.5 text-emerald-500" /> OTP verified POD</span><span className="inline-flex items-center gap-1"><Activity className="h-3.5 w-3.5 text-orange-500" /> GPS live</span></div>
+            <div className="flex gap-2 text-xs"><span className="inline-flex items-center gap-1"><CheckCircle2 className="h-3.5 w-3.5 text-emerald-500" /> OTP verified POD</span><span className="inline-flex items-center gap-1"><Activity className="h-3.5 w-3.5 text-emerald-600" /> GPS live</span></div>
           </CardContent>
         </Card>
       </div>

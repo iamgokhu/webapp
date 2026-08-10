@@ -18,14 +18,14 @@ export default function LandingPage() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-zinc-200">
         <div className="absolute inset-0 grid-pattern opacity-40" />
-        <div className="absolute inset-0 bg-gradient-to-b from-orange-50/60 via-transparent to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-emerald-50/60 via-transparent to-white" />
         <div className="relative mx-auto max-w-[1280px] px-4 py-12 md:py-20">
           <div className="mx-auto max-w-3xl text-center">
             <Badge variant="outline" className="mb-4 gap-1.5 py-1.5 px-3 text-xs">
               <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" /> Production Ready • SOC 2 • DPDP Compliant
             </Badge>
             <h1 className="font-display text-4xl md:text-6xl font-bold tracking-tight leading-[0.95]">
-              The AI OS that <span className="text-orange-500">runs your</span> <br /> entire distribution.
+              The AI OS that <span className="text-emerald-600">runs your</span> <br /> entire distribution.
             </h1>
             <p className="mt-4 text-lg text-zinc-600 max-w-2xl mx-auto">
               Billing in 8 seconds. Inventory that never lies. 20+ AI agents handling orders, collections, fraud & routes — controlled by one owner. <span className="font-semibold text-zinc-900">This is the production Mathi PI OS.</span>
@@ -58,7 +58,7 @@ export default function LandingPage() {
                     <div className="h-8 rounded hover:bg-white border border-transparent hover:border-zinc-200 flex items-center px-3 text-xs">🧠 AI Agents • 7 running</div>
                     <div className="h-8 rounded hover:bg-white border border-transparent hover:border-zinc-200 flex items-center px-3 text-xs">🚚 Delivery • 3 trips</div>
                   </div>
-                  <Card className="bg-orange-500 text-white border-orange-500">
+                  <Card className="bg-emerald-600 text-white border-emerald-600">
                     <CardContent className="p-3">
                       <div className="text-xs font-bold">Plan: Enterprise</div>
                       <div className="text-[11px] opacity-90">All 35 modules • Unlimited</div>
@@ -118,14 +118,14 @@ export default function LandingPage() {
         <div className="flex items-end justify-between gap-4 flex-wrap">
           <div>
             <Badge variant="secondary">LEGO-BLOCK MODULES</Badge>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight">Every feature is a module. <span className="text-orange-500">Pay only for what you use.</span></h2>
+            <h2 className="mt-2 text-3xl font-bold tracking-tight">Every feature is a module. <span className="text-emerald-600">Pay only for what you use.</span></h2>
             <p className="mt-2 text-zinc-600 max-w-2xl">Unlock modules instantly — no rebuild, no migration. Enable, disable, bill per branch.</p>
           </div>
           <Link href="/dashboard/modules"><Button variant="outline" size="sm">Open Module Marketplace <ArrowRight className="h-3.5 w-3.5 ml-1" /></Button></Link>
         </div>
         <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {MODULES.map(m => (
-            <Card key={m.code} className={m.paid ? "border-orange-200 bg-orange-50/40" : ""}>
+            <Card key={m.code} className={m.paid ? "border-emerald-200 bg-emerald-50/40" : ""}>
               <CardContent className="p-4">
                 <div className="flex items-start justify-between">
                   <div className="text-2xl">{m.icon}</div>
@@ -134,7 +134,7 @@ export default function LandingPage() {
                 <div className="mt-3 font-semibold text-sm leading-tight">{m.name}</div>
                 <div className="text-xs text-zinc-500">{m.cat} • {m.code}</div>
                 <div className="mt-3 flex items-center justify-between text-xs">
-                  <span className={m.paid ? "font-semibold text-orange-600" : "text-zinc-600"}>{m.price}</span>
+                  <span className={m.paid ? "font-semibold text-emerald-600" : "text-zinc-600"}>{m.price}</span>
                   <span className="text-zinc-400">{m.paid ? "Included" : "Included"}</span>
                 </div>
               </CardContent>
@@ -162,7 +162,7 @@ export default function LandingPage() {
               </div>
             </div>
             <Card className="overflow-hidden">
-              <CardHeader className="border-b bg-white"><div className="font-semibold text-sm flex items-center gap-2"><Sparkles className="h-4 w-4 text-orange-500" /> Live Agents</div></CardHeader>
+              <CardHeader className="border-b bg-white"><div className="font-semibold text-sm flex items-center gap-2"><Sparkles className="h-4 w-4 text-emerald-600" /> Live Agents</div></CardHeader>
               <CardContent className="p-0 divide-y">
                 {AGENTS.map(a => (
                   <div key={a.name} className="flex items-center gap-3 p-3 text-sm">
@@ -193,8 +193,8 @@ export default function LandingPage() {
 
         <div className="mt-10 grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {PLANS.map(p => (
-            <Card key={p.id} className={`relative flex flex-col ${p.popular ? "border-orange-500 shadow-xl scale-[1.02]" : p.color}`}>
-              {p.popular && <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-orange-500 px-3 py-1 text-xs font-bold text-white">MOST POPULAR</div>}
+            <Card key={p.id} className={`relative flex flex-col ${p.popular ? "border-emerald-600 shadow-xl scale-[1.02]" : p.color}`}>
+              {p.popular && <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-emerald-600 px-3 py-1 text-xs font-bold text-white">MOST POPULAR</div>}
               <CardHeader>
                 <div className="text-lg font-bold">{p.name}</div>
                 <div className="text-xs text-zinc-500">{p.description}</div>
@@ -240,7 +240,7 @@ export default function LandingPage() {
             { icon: <Phone className="h-5 w-5" />, t: "WhatsApp & Phone AI", d: "Conversational ordering — AI takes orders, human approves invoices." },
           ].map(f => (
             <div key={f.t} className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <div className="h-9 w-9 rounded-full bg-orange-500 flex items-center justify-center">{f.icon}</div>
+              <div className="h-9 w-9 rounded-full bg-emerald-600 flex items-center justify-center">{f.icon}</div>
               <div className="mt-3 font-semibold">{f.t}</div>
               <div className="text-sm opacity-70">{f.d}</div>
             </div>
@@ -257,7 +257,7 @@ export default function LandingPage() {
             { q: "Started on Starter, upgraded to Growth in a week. OTP delivery + cash tracking is gold.", n: "M. Selvam — Namakkal Traders", s: "Growth • Delivery" },
           ].map(t => (
             <Card key={t.n} className="p-5">
-              <Quote className="h-5 w-5 text-orange-500" />
+              <Quote className="h-5 w-5 text-emerald-600" />
               <div className="mt-3 text-sm font-medium">"{t.q}"</div>
               <div className="mt-3 text-xs font-semibold">{t.n}</div>
               <div className="text-xs text-zinc-500">{t.s}</div>

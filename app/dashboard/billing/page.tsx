@@ -36,7 +36,7 @@ export default function BillingPage() {
     <div className="space-y-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h1 className="text-xl font-bold flex items-center gap-2"><Zap className="h-5 w-5 text-orange-500" /> Billing — 8-Second Invoice <Badge variant="success">Paid GST • e-Invoice</Badge></h1>
+          <h1 className="text-xl font-bold flex items-center gap-2"><Zap className="h-5 w-5 text-emerald-600" /> Billing — 8-Second Invoice <Badge variant="success">Paid GST • e-Invoice</Badge></h1>
           <p className="text-xs text-zinc-600">HSN auto, GST calc, e-Way above 50K, IRN via GSP. The fastest billing flow in market — paid includes e-Invoice &amp; e-Way unlimited.</p>
         </div>
         <div className="flex gap-2">
@@ -71,7 +71,7 @@ export default function BillingPage() {
             </div>
 
             <div className="grid grid-cols-2 gap-3 text-sm">
-              <div className="rounded-xl border p-3 bg-zinc-50 space-y-1"><div className="flex justify-between"><span>Subtotal</span><b>{formatCurrency(subtotal)}</b></div><div className="flex justify-between"><span>GST</span><b>{formatCurrency(tax)}</b></div><div className="flex justify-between text-base border-t pt-1"><span>Grand Total</span><b className="text-orange-600">{formatCurrency(total)}</b></div></div>
+              <div className="rounded-xl border p-3 bg-zinc-50 space-y-1"><div className="flex justify-between"><span>Subtotal</span><b>{formatCurrency(subtotal)}</b></div><div className="flex justify-between"><span>GST</span><b>{formatCurrency(tax)}</b></div><div className="flex justify-between text-base border-t pt-1"><span>Grand Total</span><b className="text-emerald-600">{formatCurrency(total)}</b></div></div>
               <div className="space-y-2">
                 <label className="block text-xs font-medium">Payment mode (paid: UTR verify)<select className="mt-1 w-full rounded-xl border px-3 py-2 bg-white"><option>Cash</option><option>UPI — Verify UTR</option><option>NEFT/RTGS</option><option>Cheque</option></select></label>
                 <label className="block text-xs font-medium">Notes<input placeholder="Delivery instructions" className="mt-1 w-full rounded-xl border px-3 py-2 bg-white" /></label>

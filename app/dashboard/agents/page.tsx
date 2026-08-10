@@ -32,7 +32,7 @@ export default function AgentsPage(){
               <Badge variant={a.status==="Running"?"success":"secondary"}>{a.status}</Badge>
             </CardHeader>
             <CardContent className="space-y-3">
-              <div className="flex items-center gap-2 text-xs"><DollarSign className="h-3 w-3" /> Budget ₹{a.cost} / ₹{a.budget} <div className="flex-1 h-1.5 rounded-full bg-zinc-100 overflow-hidden ml-2"><div className="h-full bg-orange-500" style={{width: `${Math.min(100,(a.cost/a.budget)*100)}%`}} /></div><span>{Math.round(a.cost/a.budget*100)}%</span></div>
+              <div className="flex items-center gap-2 text-xs"><DollarSign className="h-3 w-3" /> Budget ₹{a.cost} / ₹{a.budget} <div className="flex-1 h-1.5 rounded-full bg-zinc-100 overflow-hidden ml-2"><div className="h-full bg-emerald-600" style={{width: `${Math.min(100,(a.cost/a.budget)*100)}%`}} /></div><span>{Math.round(a.cost/a.budget*100)}%</span></div>
               <div className="flex gap-2">
                 <Button size="sm" variant={a.status==="Running"?"outline":"secondary"} className="flex-1 h-8 text-xs" onClick={()=>toggle(a.name)}>{a.status==="Running"?<><Pause className="h-3 w-3 mr-1" /> Pause</>:<><Play className="h-3 w-3 mr-1" /> Resume</>}</Button>
                 <Button size="sm" variant="outline" className="flex-1 h-8 text-xs">Logs</Button>

@@ -13,7 +13,7 @@ export default function FieldPage(){
             <div className="h-[260px] rounded-xl border bg-gradient-to-br from-emerald-50 to-sky-50 grid place-items-center text-sm text-zinc-600 relative overflow-hidden">
               <div className="absolute inset-0 opacity-20" style={{backgroundImage:"radial-gradient(circle at 30% 40%, #f97316 2px, transparent 2px), radial-gradient(circle at 70% 30%, #18181b 2px, transparent 2px), radial-gradient(circle at 50% 70%, #10b981 2px, transparent 2px)", backgroundSize:"40px 40px"}} />
               <div className="relative bg-white/90 backdrop-blur rounded-xl border px-4 py-3 text-center">
-                <Route className="h-5 w-5 mx-auto text-orange-500" />
+                <Route className="h-5 w-5 mx-auto text-emerald-600" />
                 <div className="font-semibold">Live Route — Kumar</div>
                 <div className="text-xs">42 km • 14 outlets • 3h 42m active</div>
               </div>

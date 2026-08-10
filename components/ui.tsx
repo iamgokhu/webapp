@@ -8,7 +8,7 @@ export function Button({ className, variant="default", size="default", ...props 
     default: "bg-zinc-900 text-white hover:bg-zinc-800 shadow",
     outline: "border border-zinc-200 bg-white hover:bg-zinc-50",
     ghost: "hover:bg-zinc-100",
-    secondary: "bg-orange-500 text-white hover:bg-orange-600 shadow",
+    secondary: "bg-emerald-600 text-white hover:bg-emerald-700 shadow",
   }
   const sizes: Record<string,string> = {
     default: "h-10 px-5 text-sm",

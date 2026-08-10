@@ -17,7 +17,7 @@ export default function ModulesPage(){
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {mods.map(m=>(
-          <Card key={m.code} className={m.paid?"border-orange-200":""}>
+          <Card key={m.code} className={m.paid?"border-emerald-200":""}>
             <CardContent className="p-4">
               <div className="flex items-start justify-between">
                 <div className="text-2xl">{m.icon}</div>
@@ -26,7 +26,7 @@ export default function ModulesPage(){
               <div className="mt-2 font-semibold text-sm">{m.name}</div>
               <div className="text-xs text-zinc-500">{m.cat} • {m.code}</div>
               <div className="mt-2 flex items-center justify-between text-xs">
-                <span className={m.paid?"font-bold text-orange-600":"text-zinc-600"}>{m.price}</span>
+                <span className={m.paid?"font-bold text-emerald-600":"text-zinc-600"}>{m.price}</span>
                 {m.paid && m.status==="Disabled" && <span className="flex items-center gap-1 text-zinc-500"><Lock className="h-3 w-3" /> Paid unlock</span>}
               </div>
               <div className="mt-3 flex gap-2">

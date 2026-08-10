@@ -39,7 +39,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     <div className="min-h-screen bg-[#F6F6F3] flex">
       <aside className={`fixed lg:static inset-y-0 left-0 z-40 w-[280px] bg-zinc-900 text-zinc-100 flex flex-col border-r border-zinc-800 transition ${open ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}>
         <div className="h-14 flex items-center gap-3 px-4 border-b border-zinc-800">
-          <div className="h-8 w-8 rounded-lg bg-orange-500 flex items-center justify-center font-bold text-white text-sm">M</div>
+          <div className="h-8 w-8 rounded-lg bg-emerald-600 flex items-center justify-center font-bold text-white text-sm">M</div>
           <div>
             <div className="font-bold tracking-tight leading-none">Mathi PI OS</div>
             <div className="text-[10px] tracking-widest text-zinc-400">ENTERPRISE</div>
@@ -48,7 +48,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         </div>
 
         <div className="p-3">
-          <div className="rounded-xl bg-gradient-to-br from-orange-500 to-amber-500 p-3 text-white">
+          <div className="rounded-xl bg-gradient-to-br from-emerald-600 to-emerald-500 p-3 text-white">
             <div className="text-xs font-bold flex items-center gap-1"><Sparkles className="h-3.5 w-3.5" /> {user?.plan ? user.plan.toUpperCase() : "ENTERPRISE"}</div>
             <div className="text-[11px] opacity-90">All 35 modules • Unlimited branches</div>
             <div className="mt-2 h-1.5 rounded-full bg-white/30 overflow-hidden"><div className="h-full bg-white" style={{ width: "68%" }} /></div>
@@ -62,7 +62,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             return (
               <Link key={n.href} href={n.href} onClick={()=>setOpen(false)} className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm ${active ? "bg-white text-zinc-900 font-semibold" : "text-zinc-300 hover:bg-zinc-800 hover:text-white"}`}>
                 <n.icon className="h-4 w-4" /> {n.label}
-                {n.label.includes("AI Agents") && <Badge className="ml-auto bg-orange-500 text-white text-[10px]">7 LIVE</Badge>}
+                {n.label.includes("AI Agents") && <Badge className="ml-auto bg-emerald-600 text-white text-[10px]">7 LIVE</Badge>}
               </Link>
             )
           })}
