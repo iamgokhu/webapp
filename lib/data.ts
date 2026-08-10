@@ -49,11 +49,11 @@ export const MODULES = [
   { code: "field-intel", name: "Field Intelligence", cat: "Workforce", status: "Enabled", icon: "🛰️", price: "Growth+", paid: true },
   { code: "ai-orchestrator", name: "AI Orchestrator", cat: "AI", status: "Enabled", icon: "🧠", price: "Enterprise", paid: true },
   { code: "ai-whatsapp", name: "WhatsApp AI Agent", cat: "AI", status: "Enabled", icon: "💬", price: "Growth+", paid: true },
-  { code: "ai-phone", name: "Phone AI — Voice Ordering", cat: "AI", status: "Disabled", icon: "📞", price: "₹8,000/mo", paid: true },
+  { code: "ai-phone", name: "Phone AI — Voice Ordering", cat: "AI", status: "Enabled", icon: "📞", price: "Included", paid: true },
   { code: "ai-ocr", name: "OCR — Bills & Payments", cat: "AI", status: "Enabled", icon: "👁️", price: "Growth+", paid: true },
   { code: "ai-fraud", name: "Fraud & Risk Engine", cat: "AI", status: "Enabled", icon: "🚨", price: "Enterprise", paid: true },
   { code: "telegram", name: "Telegram Platform", cat: "Integrations", status: "Enabled", icon: "✈️", price: "Growth+", paid: true },
-  { code: "digital-sevai", name: "Digital Sevai", cat: "Services", status: "Disabled", icon: "🏛️", price: "₹4,999/mo", paid: true },
+  { code: "digital-sevai", name: "Digital Sevai", cat: "Services", status: "Enabled", icon: "🏛️", price: "Included", paid: true },
   { code: "reports", name: "Reports & GSTR", cat: "Ops", status: "Enabled", icon: "📊", price: "Included", paid: false },
   { code: "audit", name: "Audit Logs", cat: "Ops", status: "Enabled", icon: "📝", price: "Included", paid: false },
 ]
@@ -65,7 +65,7 @@ export const AGENTS = [
   { name: "Collection Agent", level: "L3", status: "Running", jobs: 312, cost: 38, budget: 120, workers: 2 },
   { name: "Route Agent", level: "L3", status: "Running", jobs: 189, cost: 21, budget: 100, workers: 2 },
   { name: "Fraud Detection Agent", level: "L3", status: "Running", jobs: 892, cost: 67, budget: 200, workers: 2 },
-  { name: "Campaign Agent", level: "L3", status: "Paused", jobs: 45, cost: 12, budget: 80, workers: 1 },
+  { name: "Campaign Agent", level: "L3", status: "Running", jobs: 1245, cost: 67, budget: 200, workers: 12 },
   { name: "Monitoring Agent", level: "L2", status: "Running", jobs: 2100, cost: 23, budget: 100, workers: 1 },
 ]
 
@@ -82,6 +82,32 @@ export const PARTIES = [
   { name: "Murugan Stores, Erode", type: "Wholesale", tier: "Platinum", balance: 124000, credit: 250000, status: "Approved" },
   { name: "Aavin Canteen, Namakkal", type: "Canteen", tier: "Silver", balance: 32000, credit: 75000, status: "Approved" },
   { name: "Priya Supermarket, Salem", type: "Supermarket", tier: "Diamond", balance: 89000, credit: 200000, status: "Pending" },
+]
+
+export const CAMPAIGN_PLATFORMS = [
+  { name: "WhatsApp Business", icon: "💬", status: "Running", reach: "12,840", ctr: "8.4%", platform: "whatsapp" },
+  { name: "Telegram", icon: "✈️", status: "Running", reach: "8,420", ctr: "6.2%", platform: "telegram" },
+  { name: "Instagram", icon: "📸", status: "Running", reach: "15,230", ctr: "5.1%", platform: "instagram" },
+  { name: "Facebook", icon: "📘", status: "Running", reach: "18,900", ctr: "4.8%", platform: "facebook" },
+  { name: "Google Ads", icon: "🔍", status: "Running", reach: "22,100", ctr: "3.9%", platform: "google" },
+  { name: "SMS (MSG91)", icon: "📲", status: "Running", reach: "9,740", ctr: "7.2%", platform: "sms" },
+  { name: "Email (Resend)", icon: "📧", status: "Running", reach: "11,560", ctr: "6.8%", platform: "email" },
+  { name: "IVR Phone AI", icon: "📞", status: "Running", reach: "6,830", ctr: "9.1%", platform: "phone" },
+  { name: "YouTube", icon: "▶️", status: "Running", reach: "13,450", ctr: "4.2%", platform: "youtube" },
+  { name: "In-App Push (FCM)", icon: "🔔", status: "Running", reach: "10,920", ctr: "10.4%", platform: "push" },
+  { name: "Web Banner", icon: "🌐", status: "Running", reach: "7,680", ctr: "3.5%", platform: "web" },
+  { name: "Voice Broadcast", icon: "🎙️", status: "Running", reach: "5,210", ctr: "8.9%", platform: "voice" },
+]
+
+export const DIGITAL_SEVAI = [
+  { name: "PAN Services", icon: "🪪", requests: 124, revenue: 18600, status: "Active" },
+  { name: "Passport Seva", icon: "🛂", requests: 42, revenue: 21000, status: "Active" },
+  { name: "Aadhaar Update", icon: "🆔", requests: 89, revenue: 4450, status: "Active" },
+  { name: "Income Certificate", icon: "📄", requests: 67, revenue: 6700, status: "Active" },
+  { name: "Caste Certificate", icon: "📜", requests: 34, revenue: 3400, status: "Active" },
+  { name: "Bill Payments", icon: "💡", requests: 210, revenue: 10500, status: "Active" },
+  { name: "Insurance Leads", icon: "🛡️", requests: 18, revenue: 18000, status: "Active" },
+  { name: "Loan Leads (NBFC)", icon: "🏦", requests: 12, revenue: 24000, status: "Active" },
 ]
 
 export const DELIVERIES = [

@@ -4,7 +4,7 @@ import { usePathname, useRouter } from "next/navigation"
 import { useAuth } from "@/lib/store"
 import { useEffect, useState } from "react"
 import { Button, Badge } from "@/components/ui"
-import { LayoutDashboard, Receipt, Package, Users, ShoppingCart, Truck, UserCheck, MapPinned, Bot, Puzzle, BarChart3, Settings, Shield, LogOut, Menu, X, Sparkles, CreditCard } from "lucide-react"
+import { LayoutDashboard, Receipt, Package, Users, ShoppingCart, Truck, UserCheck, MapPinned, Bot, Puzzle, BarChart3, Settings, Shield, LogOut, Menu, X, Sparkles, CreditCard, Phone, Building2, Megaphone } from "lucide-react"
 
 const NAV = [
   { href: "/dashboard", label: "Command Center", icon: LayoutDashboard },
@@ -16,6 +16,9 @@ const NAV = [
   { href: "/dashboard/delivery", label: "Delivery", icon: Truck },
   { href: "/dashboard/hrms", label: "HRMS & Attendance", icon: UserCheck },
   { href: "/dashboard/field", label: "Field Intel", icon: MapPinned },
+  { href: "/dashboard/phone-ai", label: "Phone AI — Voice", icon: Phone },
+  { href: "/dashboard/digital-sevai", label: "Digital Sevai", icon: Building2 },
+  { href: "/dashboard/campaigns", label: "Campaigns 12x", icon: Megaphone },
   { href: "/dashboard/agents", label: "AI Agents", icon: Bot },
   { href: "/dashboard/modules", label: "Modules", icon: Puzzle },
   { href: "/dashboard/reports", label: "Reports & GST", icon: BarChart3 },
