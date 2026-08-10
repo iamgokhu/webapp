@@ -13,7 +13,7 @@ export default function OrdersPage(){
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between flex-wrap gap-3">
-        <h1 className="text-xl font-bold">Order Control Engine — Central Validation</h1>
+        <h1 className="text-xl font-bold text-white">Order Control Engine — Central Validation</h1>
         <Badge variant="secondary">ATS = Physical - Reserved - Blocked - Safety • Hierarchical blocking</Badge>
       </div>
       <div className="grid lg:grid-cols-4 gap-4">
@@ -22,15 +22,15 @@ export default function OrdersPage(){
           { k: "Confirmed", v: "412" },
           { k: "Blocked (ATS/Margin)", v: "18" },
           { k: "Avg Confirm", v: "1.4 sec" },
-        ].map(c=>(<Card key={c.k} className="p-4 text-center"><div className="text-xs text-zinc-500">{c.k}</div><div className="text-xl font-bold">{c.v}</div></Card>))}
+        ].map(c=>(<Card key={c.k} className="p-4 text-center"><div className="text-xs text-zinc-400">{c.k}</div><div className="text-xl font-bold">{c.v}</div></Card>))}
       </div>
       <Card>
-        <CardHeader className="pb-2"><div className="font-semibold text-sm">All Channels — Single Authority</div><div className="text-xs text-zinc-500">Customer, Salesman, Sales AI, Phone AI all validated here. No bypass.</div></CardHeader>
+        <CardHeader className="pb-2"><div className="font-semibold text-sm">All Channels — Single Authority</div><div className="text-xs text-zinc-400">Customer, Salesman, Sales AI, Phone AI all validated here. No bypass.</div></CardHeader>
         <CardContent className="space-y-2">
           {ORDERS.map(o=>(
             <div key={o.id} className="rounded-xl border p-3 flex flex-wrap items-center gap-3 text-sm">
               <div className="font-mono text-xs font-bold">{o.id}</div>
-              <div className="flex-1 min-w-[140px]"><div className="font-medium">{o.party}</div><div className="text-xs text-zinc-500">{o.channel} • {o.items} items • {formatCurrency(o.total)}</div></div>
+              <div className="flex-1 min-w-[140px]"><div className="font-medium">{o.party}</div><div className="text-xs text-zinc-400">{o.channel} • {o.items} items • {formatCurrency(o.total)}</div></div>
               <Badge variant={o.status==="CONFIRMED"?"success": o.status==="BLOCKED"?"warning":"secondary"}>{o.status}</Badge>
               <div className="text-xs">ATS: <b>{o.ats}</b></div>
               <Button size="sm" variant="outline" className="h-7 text-xs">Audit</Button>
