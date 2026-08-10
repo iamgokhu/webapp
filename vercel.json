@@ -1,0 +1,11 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "pnpm build",
+  "outputDirectory": ".next",
+  "installCommand": "pnpm install",
+  "regions": ["bom1"],
+  "env": {
+    "PLATFORM_MODE": "internal",
+    "SUBSCRIPTIONS_ENABLED": "true"
+  }
+}
