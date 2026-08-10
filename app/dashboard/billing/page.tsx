@@ -4,7 +4,8 @@ import { Card, CardContent, CardHeader, Badge, Button } from "@/components/ui"
 import { useBilling } from "@/lib/store"
 import { formatCurrency } from "@/lib/utils"
 import { INVENTORY } from "@/lib/data"
-import { Plus, Zap, Printer, Share2, Search, ScanLine, Timer } from "lucide-react"
+import { Plus, Zap, Printer, Share2, Search, ScanLine, Timer, Palette } from "lucide-react"
+import Link from "next/link"
 
 export default function BillingPage() {
   const { invoices, addInvoice } = useBilling()
@@ -39,6 +40,7 @@ export default function BillingPage() {
           <p className="text-xs text-zinc-600">HSN auto, GST calc, e-Way above 50K, IRN via GSP. The fastest billing flow in market — paid includes e-Invoice &amp; e-Way unlimited.</p>
         </div>
         <div className="flex gap-2">
+          <Link href="/dashboard/billing/templates"><Button variant="secondary" size="sm" className="gap-1"><Palette className="h-3.5 w-3.5" /> Invoice Themes — A4/A5</Button></Link>
           <Button variant="outline" size="sm"><Printer className="h-3.5 w-3.5 mr-1" /> Print</Button>
           <Button variant="outline" size="sm"><Share2 className="h-3.5 w-3.5 mr-1" /> Share WhatsApp</Button>
         </div>
