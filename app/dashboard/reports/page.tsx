@@ -14,7 +14,7 @@ export default function ReportsPage(){
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between flex-wrap gap-3">
-        <h1 className="text-xl font-bold text-white">Reports & GST — 25+ Standard</h1>
+        <h1 className="text-xl font-bold">Reports & GST — 25+ Standard</h1>
         <div className="flex gap-2"><Button size="sm" variant="outline">Auto-email to CA</Button><Button size="sm" variant="secondary">Export GSTR JSON</Button></div>
       </div>
       <div className="grid lg:grid-cols-3 gap-4">
@@ -23,7 +23,7 @@ export default function ReportsPage(){
           <CardHeader className="pb-2"><div className="font-semibold text-sm">Available Reports (Paid — all unlocked in Enterprise)</div></CardHeader>
           <CardContent className="grid sm:grid-cols-2 gap-2 text-sm">
             {["Sales Register", "Purchase Register", "GST GSTR-1/2/3B", "Stock Ledger", "Party Ledger", "Trial Balance", "P&L", "Cash Flow", "Aging (Party-wise)", "Stock Valuation — FIFO/Wtd Avg", "Branch-wise Sales", "Salesman Performance"].map(r=>(
-              <div key={r} className="rounded-xl border px-3 py-2 bg-zinc-900 flex justify-between"><span className="text-xs font-medium">{r}</span><Badge variant="secondary" className="text-[10px]">PDF + Excel</Badge></div>
+              <div key={r} className="rounded-xl border px-3 py-2 bg-white flex justify-between"><span className="text-xs font-medium">{r}</span><Badge variant="secondary" className="text-[10px]">PDF + Excel</Badge></div>
             ))}
           </CardContent>
         </Card>
