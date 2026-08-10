@@ -31,7 +31,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
   useEffect(() => {
     setMounted(true)
-    const paid = typeof window !== "undefined" ? localStorage.getItem("distribuai_paid") : null
+    const paid = typeof window !== "undefined" ? localStorage.getItem("mathi_paid") : null
     // allow demo without auth — but show prompt
   }, [])
 
@@ -39,9 +39,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     <div className="min-h-screen bg-[#F6F6F3] flex">
       <aside className={`fixed lg:static inset-y-0 left-0 z-40 w-[280px] bg-zinc-900 text-zinc-100 flex flex-col border-r border-zinc-800 transition ${open ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}>
         <div className="h-14 flex items-center gap-3 px-4 border-b border-zinc-800">
-          <div className="h-8 w-8 rounded-lg bg-orange-500 flex items-center justify-center font-bold text-white text-sm">D</div>
+          <div className="h-8 w-8 rounded-lg bg-orange-500 flex items-center justify-center font-bold text-white text-sm">M</div>
           <div>
-            <div className="font-bold tracking-tight leading-none">DistribuAI OS</div>
+            <div className="font-bold tracking-tight leading-none">Mathi PI OS</div>
             <div className="text-[10px] tracking-widest text-zinc-400">ENTERPRISE</div>
           </div>
           <button onClick={()=>setOpen(false)} className="lg:hidden ml-auto"><X className="h-5 w-5" /></button>
@@ -88,7 +88,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         <div className="sticky top-0 z-30 flex h-14 items-center gap-3 border-b bg-white/80 backdrop-blur px-4">
           <button onClick={()=>setOpen(true)} className="lg:hidden p-2 rounded-lg border"><Menu className="h-4 w-4" /></button>
           <div className="hidden md:flex items-center gap-2 text-xs">
-            <span className="text-zinc-500">Salem HQ • Branch: Salem-A • Today: {new Date().toLocaleDateString("en-IN")}</span>
             <span className="text-zinc-500">Salem HQ • Branch: Salem-A • Today: {new Date().toLocaleDateString("en-IN")}</span>
             <span className="hidden lg:inline-flex items-center gap-1 ml-2"><span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" /> Live — Redis • Postgres • Meilisearch</span>
           </div>

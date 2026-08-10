@@ -28,7 +28,7 @@ export default function LandingPage() {
               The AI OS that <span className="text-orange-500">runs your</span> <br /> entire distribution.
             </h1>
             <p className="mt-4 text-lg text-zinc-600 max-w-2xl mx-auto">
-              Billing in 8 seconds. Inventory that never lies. 20+ AI agents handling orders, collections, fraud & routes — controlled by one owner. <span className="font-semibold text-zinc-900">This is the production DistribuAI OS.</span>
+              Billing in 8 seconds. Inventory that never lies. 20+ AI agents handling orders, collections, fraud & routes — controlled by one owner. <span className="font-semibold text-zinc-900">This is the production Mathi PI OS.</span>
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link href="/checkout?plan=growth"><Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2">Start 14-day Free Trial <ArrowRight className="h-4 w-4" /></Button></Link>
@@ -47,7 +47,7 @@ export default function LandingPage() {
             <div className="rounded-2xl border border-zinc-200 bg-white shadow-2xl overflow-hidden">
               <div className="flex items-center gap-2 border-b bg-zinc-50 px-4 py-3">
                 <div className="flex gap-1.5"><span className="h-3 w-3 rounded-full bg-red-400" /><span className="h-3 w-3 rounded-full bg-yellow-400" /><span className="h-3 w-3 rounded-full bg-green-400" /></div>
-                <span className="ml-3 text-xs font-mono text-zinc-500">app.distribuai.in — Super Admin Command Center</span>
+                <span className="ml-3 text-xs font-mono text-zinc-500">app.mathipi.in — Super Admin Command Center</span>
                 <span className="ml-auto hidden sm:flex items-center gap-1.5 text-xs"><span className="h-2 w-2 rounded-full bg-emerald-500" /> All systems operational</span>
               </div>
               <div className="grid md:grid-cols-[240px_1fr] min-h-[420px]">
@@ -292,7 +292,7 @@ export default function LandingPage() {
 
       <footer className="border-t py-8 text-center text-xs text-zinc-500">
         <div className="mx-auto max-w-[1280px] px-4">
-          <div className="font-semibold text-zinc-700">DistribuAI OS • August 2026</div>
+          <div className="font-semibold text-zinc-700">Mathi PI OS • August 2026</div>
           <div className="mt-1">Made for Indian distribution • Tamil Nadu • GST • UPI • Razorpay • MapmyIndia • MSG91 • Gupshup</div>
           <div className="mt-2 flex items-center justify-center gap-4"><a href="#" className="underline">Terms</a><a href="#" className="underline">Privacy (DPDP)</a><a href="#" className="underline">Refund Policy</a><a href="#" className="underline">Contact</a></div>
         </div>

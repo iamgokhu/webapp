@@ -11,7 +11,7 @@ export default function SettingsPage(){
   const { user } = useAuth()
   const [planId, setPlanId] = useState<string>("enterprise")
   useEffect(()=>{
-    const p = typeof window!=="undefined"? localStorage.getItem("distribuai_plan"): null
+    const p = typeof window!=="undefined"? localStorage.getItem("mathi_plan"): null
     if (p) setPlanId(p)
     else if (user?.plan) setPlanId(user.plan)
   },[user])

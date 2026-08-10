@@ -21,7 +21,7 @@ function CheckoutInner() {
     setPaying(true)
     setTimeout(() => {
       setDone(true)
-      if (typeof window !== "undefined") localStorage.setItem("distribuai_plan", plan.id)
+      if (typeof window !== "undefined") localStorage.setItem("mathi_plan", plan.id)
       setTimeout(() => router.push("/dashboard"), 1200)
     }, 1600)
   }
@@ -32,7 +32,7 @@ function CheckoutInner() {
         <Card className="max-w-md w-full text-center p-8">
           <div className="mx-auto h-12 w-12 rounded-full bg-emerald-500 flex items-center justify-center text-white"><Check className="h-6 w-6" /></div>
           <h1 className="mt-4 text-2xl font-bold">Payment Successful 🎉</h1>
-          <p className="text-sm text-zinc-600 mt-2">Welcome to DistribuAI OS — <b>{plan.name}</b> (Paid). Your 14-day trial is active. Redirecting to Command Center…</p>
+          <p className="text-sm text-zinc-600 mt-2">Welcome to Mathi PI OS — <b>{plan.name}</b> (Paid). Your 14-day trial is active. Redirecting to Command Center…</p>
           <div className="mt-4 text-xs text-zinc-500">Receipt sent to +91 98xxxxxx10 • Invoice #RZPY-{Math.floor(Math.random()*1000000)}</div>
           <Link href="/dashboard" className="mt-6 inline-block"><Button>Go to Dashboard →</Button></Link>
         </Card>
@@ -87,7 +87,7 @@ function CheckoutInner() {
                   <input placeholder="CVV" defaultValue="123" className="rounded-lg border px-3 py-2" />
                   <input placeholder="Name on card" defaultValue="GOKHUL RAJESH" className="rounded-lg border px-3 py-2" />
                 </div>
-                <div className="text-xs text-zinc-500">Powered by <b>Razorpay</b> • UPI: distribuai@razorpay • Cards, Netbanking, NEFT/RTGS, EMIs supported</div>
+                <div className="text-xs text-zinc-500">Powered by <b>Razorpay</b> • UPI: mathi@razorpay • Cards, Netbanking, NEFT/RTGS, EMIs supported</div>
               </CardContent>
             </Card>
           </div>
@@ -121,7 +121,7 @@ function CheckoutInner() {
             </Card>
 
             <Card className="p-4 bg-orange-50 border-orange-200">
-              <div className="text-sm font-semibold">Why DistribuAI OS — Paid?</div>
+              <div className="text-sm font-semibold">Why Mathi PI OS — Paid?</div>
               <ul className="mt-2 space-y-1 text-xs text-zinc-700 list-disc list-inside">
                 <li>8-sec billing saves ~2 hrs/day per counter</li>
                 <li>AI blocked ₹ 23L fraud last quarter (across paid customers)</li>

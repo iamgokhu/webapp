@@ -41,14 +41,14 @@ export const useAuth = create<AuthState>((set, get) => ({
           avatar: "GR",
         },
       })
-      if (typeof window !== "undefined") localStorage.setItem("distribuai_paid", "true")
+      if (typeof window !== "undefined") localStorage.setItem("mathi_paid", "true")
       return true
     }
     return false
   },
   logout: () => {
     set({ isAuthenticated: false, user: null, otpSent: false })
-    if (typeof window !== "undefined") localStorage.removeItem("distribuai_paid")
+    if (typeof window !== "undefined") localStorage.removeItem("mathi_paid")
   },
   setPlan: (plan) => set((s) => s.user ? ({ user: { ...s.user, plan } }) : s),
 }))
